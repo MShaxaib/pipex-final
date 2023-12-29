@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:39:47 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/12/23 19:11:49 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/12/29 18:42:59 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	main(int argc, char *argv[], char *envp[])
 {
 	t_pipex	pipex;
 
+	if(argc < 5)
+		exit (msg(ERR_INPUT));
 	pipex.infile = open(argv[1], O_RDONLY);
 	if (pipex.infile < 0)
 		exit (msg(ERR_INFILE));

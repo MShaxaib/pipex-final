@@ -6,7 +6,7 @@
 /*   By: mshazaib <mshazaib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 18:39:49 by mshazaib          #+#    #+#             */
-/*   Updated: 2023/12/23 13:32:20 by mshazaib         ###   ########.fr       */
+/*   Updated: 2023/12/28 20:02:57 by mshazaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 # define PIPEX_H
 
 # include <fcntl.h>
+# include <stdbool.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <sys/wait.h>
 # include <unistd.h>
-# include <stdbool.h>
 
 # define EXITWITHFAILURECODE 127
 # define ERR_INFILE "Error in the Infile"
